@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css?family=Overpass");
+
+:root {
+  --orange: hsl(25, 97%, 53%);
+  --light-grey: hsla(217, 12%, 63%, 0.323);
+  --medium-grey: hsl(216, 12%, 54%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+  --light-lavender: hsl(241, 100%, 89%);
+
+  --font-size: 15px;
+  --font-family: "Overpass", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  background: var(--very-dark-blue);
+
+  min-height: 100vh;
+  max-width: 100%;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  align-self: center;
+}
+
+.card {
+  background: var(--dark-blue);
+  height: 40vh;
+  width: 40vh;
+  min-height: 300px;
+  min-width: 300px;
+  border-radius: 40px;
+  padding: 2rem;
+  align-self: center;
+}
+
+.card-front,
+.card-back {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+.card-back {
+  align-items: center;
+  padding-top: 1rem;
+  width: 100%;
+  height: 100%;
+}
+
+.card-back-footer-text {
+  text-align: center;
+  padding-bottom: 2rem;
+  color: var(--medium-grey);
+}
+
+.thank-you {
+  color: white;
+  padding-top: 1rem;
+  font-size: 1.7rem;
+}
+
+.card-back-header-info {
+  color: var(--orange);
+  background: var(--light-grey);
+  padding: 0.5rem 1.3rem 0.5rem 1.3rem;
+  border-radius: 30px;
+  margin-top: 5px;
+}
+
+.circle {
+  border-radius: 50%;
+  height: 3rem;
+  width: 3rem;
+  background: var(--light-grey);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--medium-grey);
+}
+
+.hide {
+  display: none;
+}
+
+.card-rating {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}
+
+.attribution {
+  padding: 1rem;
+  background: #111;
+  color: var(--light-lavender);
+  text-align: center;
+}
+
+.submit-btn {
+  border-radius: 30px;
+  padding: 0.8rem;
+  background: var(--orange);
+  color: white;
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background: white;
+  color: var(--orange);
+}
+
+.card-question {
+  color: white;
+}
+
+.card-question-info {
+  color: var(--medium-grey);
+}
+
+.rating:hover {
+  background: var(--medium-grey);
+  color: white;
+}
+
+.rating:focus {
+  background: var(--orange);
+  color: white;
+}
+
+.rating {
+  font-weight: bold;
+}
+
+.card-feedback {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
