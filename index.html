@@ -14,7 +14,7 @@
 
 <body>
   <main>
-    <section class="card">
+    <section class="card" id="card">
       <div class="card-front" id="frontCard">
 
         <div class="circle card-star">
@@ -36,9 +36,9 @@
           <button class="circle rating" onclick="selectRating(5)"><span>5</span></button>
         </div>
 
-        <button class="submit-btn" onclick="submitRating()">SUBMIT</button>
+        <button class="submit-btn" onclick="submitRating()" disabled id="submitBtn">SUBMIT</button>
       </div>
-      <div class="card-back hide" id="backCard">
+      <div class="card-back" id="backCard">
 
         <img src="images/illustration-thank-you.svg" alt="thank-you-img">
         <div class="card-back-header-info">You selected <span id="selectedRating"></span> out of 5</div>
