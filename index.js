@@ -9,6 +9,8 @@ const submitRating = () => {
   document.getElementById("card").classList.add("flip");
   document.getElementById("selectedRating").innerHTML =
     localStorage.getItem("selectedRating");
-  document.getElementById("frontCard").classList.add("hide");
-  document.getElementById("backCard").classList.remove("hide");
+  setTimeout(
+    () => document.getElementById("frontCard").classList.add("hide"),
+    200
+  );
 };
