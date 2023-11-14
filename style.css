@@ -158,6 +158,7 @@ main {
 .rating:hover {
   background: var(--medium-grey);
   color: white;
+  cursor: pointer;
 }
 
 .rating:focus {
